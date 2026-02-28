@@ -1,0 +1,18 @@
+[project]
+name = "alphaprofile"
+version = "0.1.0"
+description = "Alpha profiling and selection toolkit"
+requires-python = ">=3.9"
+readme = "README.md"
+
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+]
+
+[project.scripts]
+alphaprofile = "alphaprofile.cli:main"
+
+[tool.pytest.ini_options]
+addopts = "-q"
